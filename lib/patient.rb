@@ -8,16 +8,16 @@ class Patient
 
   def add_appointment(appointment)
     @appointments << appointment
-    appointment.patient = self 
-  end 
+    appointment.patient = self
+  end
 
-  def appointments 
+  def appointments
     @appointments
-  end 
+  end
 
   def doctors
     self.appointments.collect |appointment|
       appointment.doctor
-    end 
+    end
   end 
 end
