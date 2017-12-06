@@ -7,5 +7,5 @@ class Appointment
 
   def patient
     appointment.patient = self
-  end 
+  end
 end
